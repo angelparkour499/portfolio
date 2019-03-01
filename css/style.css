@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto|Source+Sans+Pro');
+
+html {scroll-behavior: smooth}
+* {margin: 0;
+padding: 0;}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: lightgray; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: silver; 
+}
+
+/*scroll bar -------------------------------------------------------------------------------------------------*/
+/*Landing screen -------------------------------------------------------------------------------------------*/
+
+#landing {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.landingText {
+   position: relative;
+    font-family: lato;
+    color: white;
+    margin: auto;
+    top: 35%;
+    width: 40%;
+    height: auto;
+    padding: 1em;
+    background-color:rgba(0, 0, 0, .3);
+    text-align: center;
+    
+}
+a:link, a:visited {text-decoration: none !important;}
+
+
+.landingText h1 {
+    font-family: raleway;
+    font-variant: small-caps;
+color: white;}
+
+
+.landingText p {font-variant: small-caps;
+margin-top: 10px;
+color: white}
+
+.arrowTransfer {cursor: pointer;}
+
+.landingText a {position: relative;
+color: white;
+height: auto;
+background-color: aqua}
+#arrow {
+    position: relative;
+    font-size: 23px;
+margin-top: 10px;}
+
+
+ .landingText a:hover #arrow {animation-name: arrow;
+animation-duration: 2s;
+animation-fill-mode: forwards;}
+
+@keyframes arrow {
+    from {top: 0}
+    to {top: 10px;}
+}
+
+/*landing screen ----------------------------------------------------------------------------------------------------*/
+
+/*description section ---------------------------------------------------------------------------------------*/
+
+
+
+#greeting {background-color: rgba(248, 248, 248);
+padding: 1em;
+padding-top: 8em;
+height:80vh;
+text-align: center;
+font-family: raleway;
+word-spacing: 3px;
+color: gray; 
+}
+
+#greeting h2 {
+    margin: auto;
+    text-align: center;
+    font-variant: small-caps;
+font-size: 25px;
+color: dimgray;
+width: 70%;
+border-bottom: .7px lightgray solid;
+padding-bottom: 10px}
+
+#greeting p {
+width: 70%;
+margin: 40px auto}
+
+#secondArrow {
+    color: dimgrey;
+    }
+
+#secondArrow i {font-size: 20px}
+
+
+#secondArrow:hover i {
+    transition: .6s;
+    margin-top: 7px}
+
+#greeting a div { transition: opacity 5s;
+opacity: 0;
+    margin-top: 16em;
+}
+
+
+#greeting a p {
+    margin: 0 auto;
+     
+}
+
+/*description section ---------------------------------------------------------------------------------------------------------*/
+
+/*details -----------------------------------------------------------------------------------------------------------*/
+
+#detail {padding-top: 15em;
+padding-bottom: 2em;}
+
+#detail-title {
+    margin: auto;
+    color: dimgray;
+    text-align: center;
+    font-family: raleway;
+    font-variant: small-caps;
+}
+.fading {animation-name: fading;
+animation-duration: .5s;
+animation-fill-mode: forwards}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+        margin-bottom: 30px
+    }
+    to {
+        opacity: 1;
+        margin-bottom: 0px
+    }
+}
+
+
+.estructura {display: grid;
+grid-auto-rows: minmax(290px, auto);
+background-color: white;
+  grid-row-gap: 50px;
+}
+.selfColor1 {background-color: #DCEDC8;
+      background-image: linear-gradient(#03BF60, #03BF60);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+    transition: background-size .7s, color .4s;
+color: white;}
+
+.textS:hover {background-size: 0% 0%;
+color: black;}
+
+
+.self1 {grid-column: 1/4;
+display: grid;
+grid-template-columns: 40% 60%;
+  padding-bottom: 50px;
+border-bottom: .4px solid lightgray;}
+
+
+.imagenPng { 
+  max-width: 230px;
+  height: 15vw;
+  max-height: 180px;
+  min-height: 70px;
+margin: 35% 15%;
+border-radius: 10px;
+cursor: pointer;
+border: 1px solid lightgray;}
+
+.left {margin: 35% 45%}
+
+.textS  {margin: auto;
+font-family: raleway;
+  width: 40vw;
+max-width: 370px;
+border-radius: 50%;
+  height: 25vw;
+    min-height: 200px;
+  max-height: 370px;
+  text-align: center;
+cursor: pointer;
+padding-top: 30px;
+background-size: 100% 100%;
+ transition: background-size .7s, color .4s}
+
+.textS h3 {margin-top: 20%;}
+
+.textS p {width: 70%;
+margin: 0 auto;}
+
+.selfColor2 {
+  background-color: lightblue;
+    background-image: linear-gradient(#38B0DE	, #38B0DE	);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+    transition: background-size .7s, color .4s;
+color: white;}
+
+
+
+
+
+.textS h3 {font-weight: 400;
+font-size: 20px;
+}
+
+.textS p {font-size: 17px;
+color: rgb(100, 100, 100);
+transition: color .3s;
+color: white;}
+.textS:hover  p {
+color: black;}
+
+.self2 {grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 60% 40%;
+    padding-bottom: 50px;
+border-bottom: .4px solid lightgray;
+}
+.self2:last-child {border-bottom: none;}
+
+/*modal----------------------------------------------*/
+.modal {display: none;
+position: fixed;
+width: 100%;
+height: 100%;
+  z-index: 1;
+background-color: rgba(0, 0, 0, .8);
+padding-top: 50px;
+ overflow: auto;
+left: 0;
+top: 0;}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;}
+
+
+/*slideshow in modal------------------------------------*/
+.modal-content {
+    background-color: #fefefe;
+  width: 80%;
+  min-width: 200px;
+   max-width: 600px;
+height: 50vw;
+  min-height: 190px;
+  max-height: 400px;
+margin: 20px auto;
+position: relative;}
+
+
+.slide {display: none;
+width: 100%;
+ 
+height: 100%;
+  position: relative;
+  background-color: black;
+}
+.slide img {position: relative;
+width: 100%;
+height: 100%;}
+
+.slide h3 {
+  text-align: center;
+margin: auto;
+color: white;
+font-family: raleway;
+font-variant: small-caps;}
+
+.boton {border: none;
+  width: auto;
+  height: auto;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  z-index: 11;
+  color: rgba(240, 240, 240, .8);
+  background-color: rgba(0, 0, 0, .4);
+    cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.boton:hover { background-color: rgba(0, 0, 0, 1);}
+.right {
+right: 0;}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .6s;
+  animation-name: fade;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*slideshow in modal*/
+
+/*modal*/
+
+#thirdArrow {margin: auto;
+text-align: center;
+color: dimgray;
+margin-bottom: 15px;
+    font-family: raleway;
+}
+#thirdArrow i {margin-top: 6px;
+font-size: 20px;
+position: absolute}
+
+#thirdArrow:hover i {
+    transition: .4s;
+    margin-top: 12px;}
+
+
+/* details ----------------------------------------------------------------------------------------------*/
+
+/*contact*/
+#contact {width: 100%;
+height: 80vh;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.github-profile {font-family: raleway;
+    color: black !important;
+font-variant: small-caps;
+margin:auto;
+text-align: center;
+width: 200px;}
+
+
+.github-profile i {
+    font-size: 8em;
+ position: relative;;
+}
+.thanks {margin-top: 300px;
+color: white;
+font-family: lato;
+font-variant;}
+
+/*contact*/
+
+
+/*responsive design --------------------------------------------------------------------------------------*/
+
+@media (max-width: 1200px) {
+    .textS {margin:;
+        padding: 0;}
+    .textS h3 {font-size: 1em}
+    .textS p {font-size: .9em}
+    #greeting a div {margin-top: 10em;}
+}
+
+
+@media (max-width: 860px) {.textS {margin: 0 2em;
+    padding-top: 0;}
+  .textS h3{font-size: 2.6vw;}
+  .textS p {font-size: 2vw;}
+}
+
+@media (max-width: 677px) {
+}
+
+
+@media (max-width: 560px) {
+  .textS {grid-column: 1/4;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  background-color: white;
+    padding-top: 0}
+  .self > .textS:nth-child(odd) {
+  background-color: white;
+}
+  .selfColor1 {background-color: white !important;}
+  .imagenS {grid-row: 2;
+    grid-column: 1/4;
+  }
+  
+  
+  .textS h3 {font-size: 17.6px}
+  .textS p{font-size: 10.6px;}  
+  
+  .imagenPng { height: 15vw;
+  max-height: 140px;
+  min-height: 70px;
+margin: auto 35%;}
+
+}
+
+
+@media (max-width: 420px) {  .selfColor1:hover {background-size: 0% 0%;
+  color: black}
+  .selfColor2:hover {background-size: 0% 0%;
+  color: black}
+.textS:hover  p {
+color: black;}}
+
+@media (max-width: 390px) {
+  .imagenPng {margin: 15% 40% 0px 40%;}
+
+}
+
+@media (max-width: 250px) {
+  .imagenPng {margin: 55% 40% 0px 40%;}
+}
+
+
+
+

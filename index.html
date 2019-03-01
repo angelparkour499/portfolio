@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+
+
+    <title>Portfolio Angel</title>
+    <!--    My CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets">
+<!--bootstrap 5-->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!--My script-->
+    <script src="script.js"></script>     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #landing {background-image: url(assets/daylight-environment-forest-459225.jpg);}
+    #contact {background-image: url(assets/abstract-art-background-925743.jpg)}
+</style>
+
+
+<div id="landing"> <div class="landingText">
+<h1>Welcome, my name is Angel</h1>
+   <a href="#greeting"><div> <p>Follow me</p>
+   <i id="arrow" class=" fa fa-angle-double-down"></i></div></a></div></div>
+<div id="greeting">
+<div>
+<h2>Greetings!</h2>
+<p>My name is Angel, i am a certificated web designer, i start learning web design on the early 2018, get my first certificate on responsive web design by FreeCodeCamp which comes with HTML, CSS and media query, then i started studying to get my certificate on javascript and datastructure, finally manage to get it on the lates of 2018, after playing and having experience on Bootstrap, Jquery and DOM by researching on different courses, have made web designs for web store projects, surveys, landing pages.</p>
+</div>
+   <a id="secondArrow" href="#detail-title"><div id="test"> <p id="tast">This way!</p>
+   <i id="arrow2" class=" fa fa-angle-double-down"></i></div></a>
+</div>
+
+
+
+
+<div id="detail">
+    <div id="detail-title" class="faded">
+    <h2>Take a look</h2>
+        <p>(Click on the image to expand)</p>
+    </div>
+<div id="structure" class="estructura">
+  <div class="self self1 ">
+    <div class="imagenS">
+      <img class="imagenPng left"src="assets/certificate.png"  onclick="openModal();currentSlide(1)">
+    </div>
+    <div id="testing" class="textS selfColor1">
+      <h3>Responsive design</h3>
+    <p>I get this certificate by learning HTML, CSS, web design, media query plus animations using keyframes, declaring variables on css and a lot of CSS components</p>
+    </div>
+  </div>
+  <div class="self self2">
+       <div class="textS selfColor2">
+      <h3>Jacascript</h3>
+    <p>This is from SoloLearning Website, this is also the most recent certificate i've got, i was very enthusiastic on learning javascript on this page because it has a lot of good samples which helps you understand.</p>
+    </div>
+        <div class="imagenS">
+      <img class="imagenPng"src="assets/certificate%203.jpg" onclick="openModal();currentSlide(2)">
+    </div>
+  </div>
+  <div class="self self1">
+         <div class="imagenS">
+      <img class="imagenPng  left"src="assets/certificate%202.png" onclick="openModal();currentSlide(3)">
+    </div>
+       <div class="textS selfColor1">
+      <h3>Javasccript and data structure</h3>
+    <p>This is the one i consider the most difficult because it doesn't just contains javascript lessons, it also has debugging, data structures and a large amount of challenges to get familiar with the js expresions.</p>
+    </div>
+  </div>
+  <div class="self self2">
+     <div class="textS selfColor2">
+      <h3>W3school JS</h3>
+    <p>I completed all the challenges on w3school, making me able to get their certificate on the website in any moment i go and decide to finally claim it.</p>
+    </div>
+   <div class="imagenS">
+      <img class="imagenPng"src="assets/prove.png" onclick="openModal();currentSlide(4)">
+    </div>
+  </div>
+</div>
+
+
+
+<div id="myModal" class="modal fade">
+  <span class="close" onclick="closeModal()">&times;</span>
+  
+  <div class="modal-content">
+    <div class="slide fade"><img src='assets/certificate.png'><h3>FreeCodeCamp responsive web design</h3></div>
+    <div class="slide fade"><img src='assets/certificate%203.jpg'><h3>FreeCodeCamp javascript and datastructure</h3></div>
+    <div class="slide fade"><img src='assets/certificate%202.png'><h3>SoloLearn javascript</h3></div>
+    <div class="slide fade"><img src='assets/prove.png'><h3>w3school javascript test</h3></div>
+    
+        <a class="boton 	fas fa-angle-left" onclick="addSlide(-1)"></a>
+<a class="boton right fas fa-angle-right" onclick="addSlide(+1)"></a>
+  </div>
+</div>
+    <a id="thirdArrow" href="#contact"><div id="test"> <p id="tast">Just one more thing</p>
+   <i id="arrow2" class=" fa fa-angle-double-down"></i></div></a>
+</div>
+<div id="contact">
+<a href="https://github.com/angelparkour499" target="_blank" class="github-profile">
+    <i class="fa fa-github"></i>
+    <h2>Checkout my profile</h2></a>
+    <h3 class="thanks">Thank you very much for visiting</h3>
