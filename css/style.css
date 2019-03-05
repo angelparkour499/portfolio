@@ -114,7 +114,6 @@ margin: 40px auto}
   display: flex;
   position: relative;
   width: 100%;
-min-height: 100px;
 height: auto;
 background-color: rgba(0, 0, 0, 0)}
 
@@ -422,17 +421,20 @@ font-variant;}
     @media (max-width: 860px){
         .textS p {font-size: 15px}}
     
-@media (max-width: 677px) {
+@media (max-width: 677px) {    .landingText {top: 10%}
 }
 
 
 @media (max-width: 560px) {
+    #greeting {padding-top: 1em}
+    #greeting #clas p {font-size: 10px}
   .textS {grid-column: 1/4;
   width: 100%;
       min-height: 0;
       height: auto;
   text-align: center;
   margin: 10px auto;
+      background-image: linear-gradient(white, white);
   background-color: white;
     padding-top: 0;
     background-size: 0 0;
@@ -457,7 +459,10 @@ font-variant;}
       margin: 40px auto
     }
 
+    #greeting a div {margin-top: 5em;}
     
+    .cube {width: 50px;
+    height: 50px;}
 }
 
 
