@@ -14,7 +14,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-    #landing {background-image: url(assets/daylight-environment-forest-459225.jpg);}
+    #landing {background-image: url(assets/daylight-environment-forest-459225.jpg);
+    animation-name: land;
+    animation-duration: 10s;
+       animation-iteration-count: infinite;}
+    
+    @keyframes land {
+        0% {background-image: url(assets/daylight-environment-forest-459225.jpg)}
+        40% {background-image: url(assets/altitude-clouds-cold-772803.jpg)}
+        75% {background-image: url(assets/background-calm-waters-clouds-1095817.jpg)}
+        100% {background-image: url(assets/daylight-environment-forest-459225.jpg)}
+    }
+    
     #contact {background-image: url(assets/abstract-art-background-925743.jpg)}
 </style>
 
@@ -28,7 +39,12 @@
 <h2>Greetings!</h2>
 <p>My name is Angel, i am a certificated web designer, i start learning web design on the early 2018, get my first certificate on responsive web design by FreeCodeCamp which comes with HTML, CSS and media query, then i started studying to get my certificate on javascript and datastructure, finally manage to get it on the lates of 2018, after playing and having experience on Bootstrap, Jquery and DOM by researching on different courses, have made web designs for web store projects, surveys, landing pages.</p>
 </div>
-   <a id="secondArrow" href="#detail-title"><div id="test"> <p id="tast">This way!</p>
+    <div class="wrapping">
+  <div id="cube1" class="cube cube1"></div>
+  <div id="cube2" class="cube cube2"></div>
+</div>
+
+   <a id="secondArrow" onclick="background()" href="#detail-title"><div id="test"> <p id="tast">This way!</p>
    <i id="arrow2" class=" fa fa-angle-double-down"></i></div></a>
 </div>
 
@@ -64,7 +80,7 @@
       <img class="imagenPng  left"src="assets/certificate%202.png" onclick="openModal();currentSlide(3)">
     </div>
        <div class="textS selfColor1">
-      <h3>Javasccript and data structure</h3>
+      <h3>Javascript and data structure</h3>
     <p>This is the one i consider the most difficult because it doesn't just contains javascript lessons, it also has debugging, data structures and a large amount of challenges to get familiar with the js expresions.</p>
     </div>
   </div>
@@ -86,8 +102,8 @@
   
   <div class="modal-content">
     <div class="slide fade"><img src='assets/certificate.png'><h3>FreeCodeCamp responsive web design</h3></div>
-    <div class="slide fade"><img src='assets/certificate%203.jpg'><h3>FreeCodeCamp javascript and datastructure</h3></div>
-    <div class="slide fade"><img src='assets/certificate%202.png'><h3>SoloLearn javascript</h3></div>
+    <div class="slide fade"><img src='assets/certificate%203.jpg'><h3>SoloLearn javascript</h3></div>
+    <div class="slide fade"><img src='assets/certificate%202.png'><h3>FreeCodeCamp javascript and datastructure</h3></div>
     <div class="slide fade"><img src='assets/prove.png'><h3>w3school javascript test</h3></div>
     
         <a class="boton 	fas fa-angle-left" onclick="addSlide(-1)"></a>
