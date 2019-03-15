@@ -208,7 +208,8 @@ border-bottom: .4px solid lightgray;}
 margin: 35% auto;
 border-radius: 10px;
 cursor: pointer;
-border: 1px solid lightgray;}
+border: 1px solid lightgray;
+filter: blur(.7px)}
 
 
 .textS  {
@@ -264,7 +265,7 @@ border-bottom: .4px solid lightgray;
 }
 .self2:last-child {border-bottom: none;}
 
-/*modal----------------------------------------------*/
+/*modal------------------------------------------------------------------------------------------------*/
 .modal {display: none;
 position: fixed;
 width: 100%;
@@ -291,7 +292,7 @@ top: 0;}
   text-decoration: none;}
 
 
-/*slideshow in modal------------------------------------*/
+/*slideshow in modal--------------------------------------------------------------------------------------------*/
 .modal-content {
     background-color: #fefefe;
   width: 80%;
@@ -332,15 +333,18 @@ font-variant: small-caps;}
   color: rgba(240, 240, 240, .8);
   background-color: rgba(0, 0, 0, .4);
     cursor: pointer;
-  width: auto;
   margin-top: -22px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0px 0px 3px;
   user-select: none;
+    text-align: center !important;
 }
 .boton:hover { background-color: rgba(0, 0, 0, 1);}
 .right {
-right: 0;}
+right: 0;
+text-align: center;
+border-radius: 0 3px 3px 0;
+}
 
 
 .fade {
@@ -351,13 +355,18 @@ right: 0;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+
+  from {opacity: .4;
+    filter: blur(2px)} 
+  to {opacity: 1;
+    filter: blur(0px)}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {opacity: .4;
+    filter: blur(2px)} 
+  to {opacity: 1;
+    filter: blur(0px)}
 }
 /*slideshow in modal*/
 
@@ -387,7 +396,7 @@ min-height: 80vh;
 background-size: 100% 100%;
 background-repeat: no-repeat;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 30vh;
 }
 
 .github-profile {font-family: raleway;
@@ -402,10 +411,12 @@ width: 200px;}
     font-size: 8em;
  position: relative;;
 }
-.thanks {margin-top: 300px;
-color: white;
-font-family: lato;
-font-variant;}
+.thanks {
+
+    color: dimgray;
+    text-align: center;
+    font-family: raleway;
+    font-variant: small-caps;}
 
 /*contact*/
 
@@ -476,3 +487,8 @@ font-variant;}
 .textS:hover  p {
 color: black;}
     }
+
+@media (max-height: 500px) {
+    #contact {min-height: 100vh;
+        padding-top: 50px;}
+}

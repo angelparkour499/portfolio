@@ -9,17 +9,27 @@
 <!--bootstrap 5-->
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!--My script-->
+    <!--My script-->       
+    
     <script src="script.js"></script>     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-    #landing {background-image: url(assets/daylight-environment-forest-459225.jpg);
+    #landing {background-image: url("assets/daylight-environment-forest-459225.jpg");
     animation-name: land;
     animation-duration: 10s;
        animation-iteration-count: infinite;}
     
-  
+    @keyframes land {
+        0% {background-image: url(assets/daylight-environment-forest-459225.jpg)}
+        25% {background-image: url(assets/daylight-environment-forest-459225.jpg);}
+        35% {background-image: url(assets/background-calm-waters-clouds-1095817.jpg)}
+        55% {background-image: url(assets/background-calm-waters-clouds-1095817.jpg)}
+        65% {background-image: url(assets/altitude-clouds-cold-772803.jpg)}
+        85% {background-image: url(assets/altitude-clouds-cold-772803.jpg)}
+        95% {background-image: url(assets/daylight-environment-forest-459225.jpg);}
+        100%  {background-image: url(assets/daylight-environment-forest-459225.jpg);}
+    }
     
     #contact {background-image: url(assets/abstract-art-background-925743.jpg)}
 </style>
@@ -39,7 +49,7 @@
   <div id="cube2" class="cube cube2"></div>
 </div>
 
-   <a id="secondArrow" onclick="background()" href="#detail-title"><div id="test"> <p id="tast">This way!</p>
+   <a id="secondArrow"  href="#detail-title"><div id="test"> <p id="tast">This way!</p>
    <i id="arrow2" class=" fa fa-angle-double-down"></i></div></a>
 </div>
 
@@ -101,15 +111,15 @@
     <div class="slide fade"><img src='assets/certificate%202.png'><h3>FreeCodeCamp javascript and datastructure</h3></div>
     <div class="slide fade"><img src='assets/prove.png'><h3>w3school javascript test</h3></div>
     
-        <a class="boton 	fas fa-angle-left" onclick="addSlide(-1)"></a>
-<a class="boton right fas fa-angle-right" onclick="addSlide(+1)"></a>
+        <a class="boton" onclick="addSlide(-1)">&lt;</a>
+<a class="boton right" onclick="addSlide(+1)">&gt;</a>
   </div>
 </div>
     <a id="thirdArrow" href="#contact"><div id="test"> <p id="tast">Just one more thing</p>
    <i id="arrow2" class=" fa fa-angle-double-down"></i></div></a>
 </div>
 <div id="contact">
-<a href="https://github.com/angelparkour499" target="_blank" class="github-profile">
+<a href="https://github.com/angelparkour499" onclick="goodbye()" target="_blank" class="github-profile">
     <i class="fa fa-github"></i>
     <h2>Checkout my profile</h2></a>
     <h3 class="thanks">Thank you very much for visiting</h3>

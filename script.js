@@ -1,4 +1,4 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(), background()};
 
 function scrollFunction() { let cubos = document.getElementsByClassName("cube");
   if (document.body.scrollTop >= document.body.clientHeight || document.documentElement.scrollTop >= document.documentElement.clientHeight) {
@@ -25,12 +25,23 @@ setInterval(timer(), 1000)
 
 function timer() {document.getElementById('test').style.opacity = '1'};
 
-function background() { setTimeout(function() {back()}, 200)
+function background() { 
+  if (document.body.scrollTop >= document.body.clientHeight*2 || document.documentElement.scrollTop >= document.documentElement.clientHeight*2)
+  {setTimeout(function() {back()}, 200)}
+    else {  
+    setTimeout(function() {unback()}, 200)
+    }
                       }
 function back() {
   let bolas = document.getElementsByClassName('textS');
   for (let o = 0;o<bolas.length;o++){
     bolas[o].style.backgroundSize = '100% 100%';
+  }
+};
+function unback() {
+  let bolas = document.getElementsByClassName('textS');
+  for (let o = 0;o<bolas.length;o++){
+    bolas[o].style.backgroundSize = '0 0';
   }
 };
 
@@ -61,3 +72,7 @@ let i;
   }
   slides[slideIndex-1].style.display = 'block'
 }
+
+function goodbye() {
+    alert("You're now being taken to my github profile, checkout my works and contact me with my public email if you're interested")
+};
