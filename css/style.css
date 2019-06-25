@@ -4,6 +4,14 @@ html {scroll-behavior: smooth}
 * {margin: 0;
 padding: 0;}
 
+/*Head -------------------------------------------------------------------*/
+#landing {
+  background-image: url("../assets/daylight-environment-forest-459225.jpg");
+}
+     
+     #contact {background-image: url(../assets/abstract-art-background-925743.jpg)}
+/*Head -------------------------------------------------------------------*/
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 5px;

@@ -1,3 +1,12 @@
+
+function loaded() {
+    document.getElementById('landing').style.WebkitAnimationName = "land"; // Code for Chrome, Safari, and Opera
+  document.getElementById("landing").style.animationName = "land";
+};
+
+
+
+
 window.onscroll = function() {scrollFunction(), background()};
 
 function scrollFunction() { let cubos = document.getElementsByClassName("cube");
