@@ -6,10 +6,10 @@ padding: 0;}
 
 /*Head -------------------------------------------------------------------*/
 #landing {
-  background-image: url("../assets/daylight-environment-forest-459225.jpg");
+  background-image: url("../assets/daylight-environment-forest-459225.webp");
 }
      
-     #contact {background-image: url(../assets/abstract-art-background-925743.jpg)}
+     #contact {background-image: url("../assets/abstract-art-background-925743.webp")}
 /*Head -------------------------------------------------------------------*/
 
 /* scroll bar */
@@ -221,9 +221,11 @@ filter: blur(.7px)}
 
 
 .textS  {
-    display: block;
+    display: flex;
     margin: auto;
+    justify-content: center;
 font-family: raleway;
+align-items: center;
   width: 40vw;
 max-width: 370px;
     min-width: 320px;
@@ -233,7 +235,6 @@ border-radius: 50%;
   max-height: 380px;
   text-align: center;
 cursor: pointer;
-padding-top: 30px;
 background-size: 00% 00%;
  transition: background-size .7s, color .4s}
 
@@ -264,6 +265,13 @@ transition: color .3s;
 color: white;}
 .textS:hover  p {
 color: black;}
+
+#testing {  background-color: #ebf178;
+  background-image: linear-gradient(#d1e237	, #d1e237	);
+background-position: 50% 50%;
+background-repeat: no-repeat;
+  transition: background-size .7s, color .4s;
+color: white;}
 
 .self2 {grid-column: 1/4;
   display: grid;
