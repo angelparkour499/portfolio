@@ -56,10 +56,24 @@ function unback() {
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
-}
+  document.addEventListener('keydown', slide)
+alert("Use left and right arrow if you wish to switch the image or use esc to escape")  
+  }  
+  function slide (e) {
+    switch(e.key){
+      case 'ArrowLeft'  : addSlide(-1)
+      break;
+      case 'ArrowRight' : addSlide(+1)
+      break;
+      case 'Escape' : closeModal()
+      break;
+    }
+  }
+
 
 function closeModal() {
   document.getElementById('myModal').style.display = 'none'
+  document.removeEventListener('keydown', slide)
 };
 
 var slides = document.getElementsByClassName("slide");
@@ -85,3 +99,4 @@ let i;
 function goodbye() {
     alert("You're now being taken to my github profile, checkout my works and contact me with my public email if you're interested")
 };
+
