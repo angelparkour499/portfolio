@@ -225,23 +225,19 @@ filter: blur(.7px)}
     margin: auto;
     justify-content: center;
 font-family: raleway;
-align-items: center;
-  width: 40vw;
-max-width: 370px;
-    min-width: 320px;
+  width: 30vw;
 border-radius: 50%;
   height: 25vw;
-    min-height: 300px;
-  max-height: 380px;
+  max-height: 40vw;
   text-align: center;
 cursor: pointer;
 background-size: 00% 00%;
  transition: background-size .7s, color .4s}
 
-.textS h3 {margin-top: 20%;}
+
 
 .textS p {width: 70%;
-margin: 0 auto;}
+margin:  auto;}
 
 .selfColor2 {
   background-color: lightblue;
