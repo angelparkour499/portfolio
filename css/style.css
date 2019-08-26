@@ -7,6 +7,10 @@ padding: 0;}
 /*Head -------------------------------------------------------------------*/
 #landing {
   background-image: url("../assets/daylight-environment-forest-459225.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
      
      #contact {background-image: url("../assets/abstract-art-background-925743.webp")}
@@ -275,7 +279,7 @@ color: white;}
     padding-bottom: 50px;
 border-bottom: .4px solid lightgray;
 }
-.self2:last-child {border-bottom: none;}
+.self:last-child {border-bottom: none;}
 
 /*modal------------------------------------------------------------------------------------------------*/
 .modal {display: none;
@@ -404,11 +408,14 @@ position: absolute}
 /*contact*/
 #contact {width: 100%;
 min-height: 80vh;
-    height: auto;
+    height: 100%;
 background-size: 100% 100%;
 background-repeat: no-repeat;
     text-align: center;
     padding-top: 30vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .github-profile {font-family: raleway;
